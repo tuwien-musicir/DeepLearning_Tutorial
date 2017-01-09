@@ -11,25 +11,34 @@ https://keras.io/
 
 # Installation of Pre-requisites
 
-Install Python 2.7: https://www.python.org/download/releases/2.7/
-Note: On most Mac and Linux systems python is already pre-installed.
-Check with `python --version` on the command line.
+## Install Python 2.7
 
-Install Python libraries:
+Note: On most Mac and Linux systems python is already pre-installed. Check with `python --version` on the command line whether you have Python 2.7.x installed.
 
-## All OS:
+Otherwise install Python 2.7 from https://www.python.org/download/releases/2.7/
 
+## Install Python libraries:
 
 ## Mac 
-(may be needed before):
+(the frist two are not needed if you have done this previously):
 xcode-select --install
 easy_install pip 
 
 sudo pip install pillow
 
-## Linux
+## Linux + Windows
 
 sudo pip install PIL
+
+## All OS
+(on Windows leave out 'sudo')
+
+cd DL_Tutorial
+sudo pip install -r requirements.txt
+
+sudo pip install ipython
+or
+sudo pip install jupyter
 
 ## Windows
 
@@ -43,23 +52,37 @@ Change these 2 lines to the following:
 
 See https://keras.io/backend/ for details or http://ankivil.com/installing-keras-theano-and-dependencies-on-windows-10/ for a step by step guide.
 
+## Optional for GPU computation
+
+If you want to train your neural networks on GPU, also install the following:
+
+Install CUDA
+Install cuDNN
+adapt .theanorc
 
 
 # Tutorials
+
+For the tutorials, we use iPython / JuPyter Notebook, which allows to program and execute Python code interactively in the browser.
 
 To run the tutorials go into the `DL_Tutorial` folder and start from the command line:
 
 `ipython notebook`
 
-Your web browser will open and you can code and execute Python interactively in the browser.
+Your web browser will open showing a list of files. Start the tutorials one after another by clicking on the following:
 
+1. Car_recognition.ipynb
+   This tutorial shows how images are loaded into Python and classified binary into "cars" and "not cars" using
+   a) a Fully Connected neural network and b) a Convolutional Neural Network.
 
 
 
 # Sources
 
-Car Data Set: http://cogcomp.cs.illinois.edu/Data/Car/
-Fashion Data Set: 
+Car Data Set:
+http://cogcomp.cs.illinois.edu/Data/Car/
+
+Fashion Data Set:
 Fashion 10000: An Enriched Social Image Dataset forFashion and Clothing
 Loni et. al, Proceedings of the 5th ACM Multimedia Systems Conference, 2014
 https://www.researchgate.net/publication/262254329_Fashion_10000_An_enriched_social_image_dataset_for_fashion_and_clothing
