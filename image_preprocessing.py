@@ -1,5 +1,5 @@
 from PIL import Image
-
+from sklearn import preprocessing
 
 # adapted from https://github.com/fchollet/keras/blob/master/keras/applications/imagenet_utils.py
 # (skipping 0 mean as we do this separately)
@@ -47,3 +47,39 @@ def resize_and_crop(img,target_width=224,target_height=224):
     img_new = img_new.crop((width_offset, height_offset, width_offset+target_width, height_offset+target_height))
     #  The box is a 4-tuple defining the left, upper, right, and lower pixel coordinate.
     return img_new
+
+
+
+# STANDARDIZE DATA
+
+def standardize(data, return_scaler = True, copy=True):
+    '''standardize the data with zero mean unit variance (feature attribute-wise)
+
+    data: numpy array to be transformed
+    return_scaler: if True, a tuple of (data, scaler) will be returned with the scaler object containing all necessary parameters to scale other data again
+    copy = False means try to avoid a copy and do inplace scaling instead.
+    '''
+
+    if return_scaler:
+        # STANDARDIZATION (0 mean, unit var)
+        scaler = preprocessing.StandardScaler(copy)
+        # alternative: NORMALIZATION (min - max Normalization to (0,1))
+        #scaler = preprocessing.MinMaxScaler()
+        data = scaler.fit_transform(data)
+        return (data, scaler)
+    else:
+        return preprocessing.scale(data,axis=0,copy=copy)
+        # axis=0 means independently standardize each feature, otherwise (if 1) standardize each sample
+
+    # how to get scaler parameters:
+    #print scaler.mean_
+    #print scaler.scale_
+
+
+def standardize_flat(data):
+    from scipy.stats.mstats import zscore
+    return zscore(data,axis=None)
+    # the manual version:
+    #m = np.mean(a)
+    #s = np.std(a)
+    #(a - m) / s
