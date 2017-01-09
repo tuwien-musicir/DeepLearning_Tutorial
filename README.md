@@ -1,5 +1,7 @@
 # Deep Learning Tutorial
-# Coding Deep Learning Algorithms in Python with Keras
+## Coding Deep Learning Algorithms in Python with Keras
+
+(c) 2017 by Thomas Lidy, TU Wien
 
 This is a set of tutorials with the purpose of getting into hands-on programming of Deep learning algorithms for
 various tasks.
@@ -7,6 +9,7 @@ various tasks.
 It uses Python 2.7 as the programming language with the popular Keras and Theano Deep Learning libraries underneath.
 
 https://keras.io/
+http://deeplearning.net/software/theano/
 
 
 # Installation of Pre-requisites
@@ -45,10 +48,10 @@ sudo pip install jupyter
 As we use Theano as the Deep Learning computation backend, but Keras is configured to use TensorFlow as default on Windows, you have to change this in the keras.json configuration file which is in the .keras folder of the user's HOME directory:
 
 Change these 2 lines to the following:
-{
+`{
     "image_dim_ordering": "th",
     "backend": "theano"
-}
+}`
 
 See https://keras.io/backend/ for details or http://ankivil.com/installing-keras-theano-and-dependencies-on-windows-10/ for a step by step guide.
 
