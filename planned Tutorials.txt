@@ -21,6 +21,9 @@ CNN (single + two layer)
 VGG
 train/test split
 cross-validation
+Data augmentation
+
+show learned filters
 
 
 4. Music vs. Speech (GTZAN)
