@@ -27,6 +27,23 @@ easy_install pip
 
 sudo pip install pillow
 
+## Linux
+
+sudo pip install PIL
+
+## Windows
+
+As we use Theano as the Deep Learning computation backend, but Keras is configured to use TensorFlow as default on Windows, you have to change this in the keras.json configuration file which is in the .keras folder of the user's HOME directory:
+
+Change these 2 lines to the following:
+{
+    "image_dim_ordering": "th",
+    "backend": "theano"
+}
+
+See https://keras.io/backend/ for details or http://ankivil.com/installing-keras-theano-and-dependencies-on-windows-10/ for a step by step guide.
+
+
 
 # Tutorials
 
@@ -42,3 +59,7 @@ Your web browser will open and you can code and execute Python interactively in 
 # Sources
 
 Car Data Set: http://cogcomp.cs.illinois.edu/Data/Car/
+Fashion Data Set: 
+Fashion 10000: An Enriched Social Image Dataset forFashion and Clothing
+Loni et. al, Proceedings of the 5th ACM Multimedia Systems Conference, 2014
+https://www.researchgate.net/publication/262254329_Fashion_10000_An_enriched_social_image_dataset_for_fashion_and_clothing
