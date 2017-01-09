@@ -1,0 +1,38 @@
+
+
+UE:
+
+[[Theano Tutorial
+https://github.com/craffel/theano-tutorial
+]]
+
+1. perceptron
+make it predict (numbers?)
+- take from DLNN book examples
+
+
+2. Car detection:
+Fully connected network
+CNN (single layer)
+
+3. People detection:
+- new data rec. by Mon Style
+CNN (single + two layer)
+VGG
+train/test split
+cross-validation
+
+
+4. Music vs. Speech (GTZAN)
+or 
+Music
+or 
+Urban Audio
+or
+Domestic Audio (multi-label)
+
+-> showcase parallel CNN
+
+5.
+RNN example?
+
