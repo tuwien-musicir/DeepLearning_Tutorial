@@ -4,7 +4,7 @@
 This is a set of tutorials with the purpose of getting into hands-on programming of Deep learning algorithms for
 various tasks.
 
-It uses Python 2.7 at the programming language with the popular Keras and Theano Deep Learning libraries underneath.
+It uses Python 2.7 as the programming language with the popular Keras and Theano Deep Learning libraries underneath.
 
 https://keras.io/
 
@@ -12,7 +12,7 @@ https://keras.io/
 # Installation of Pre-requisites
 
 Install Python 2.7: https://www.python.org/download/releases/2.7/
-Note: On most Mac and Linux systems python is already preinstalled.
+Note: On most Mac and Linux systems python is already pre-installed.
 Check with `python --version` on the command line.
 
 Install Python libraries:
