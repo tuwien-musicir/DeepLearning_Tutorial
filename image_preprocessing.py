@@ -32,7 +32,7 @@ def resize_and_crop(img,target_width=224,target_height=224):
     img_new = img.resize((new_width, new_height), Image.ANTIALIAS)
     # The filter argument can be one of NEAREST (use nearest neighbour), BILINEAR (linear interpolation in a
     # 2x2 environment), BICUBIC (cubic spline interpolation in a 4x4 environment), or ANTIALIAS (a high-quality downsampling filter).
-    # If omitted, or if the image has mode “1” or “P”, it is set to NEAREST.
+    # If omitted, or if the image has mode "1" or "P", it is set to NEAREST.
     # Note that the bilinear and bicubic filters in the current version of PIL are not well-suited for large downsampling
     # ratios (e.g. when creating thumbnails). You should use ANTIALIAS unless speed is much more important than quality.
 
