@@ -50,7 +50,7 @@ on the command line. Otherwise try to install:
 sudo pip install jupyter
 `
 
-Then install the remaining Python libraries neede:
+Then install the remaining Python libraries needed:
 ```
 cd DL_Tutorial
 sudo pip install -r requirements.txt
@@ -58,19 +58,21 @@ sudo pip install -r requirements.txt
 
 ### Windows
 
-As we use Theano as the Deep Learning computation backend, but Keras is configured to use TensorFlow as default on Windows, you have to change this in the keras.json configuration file which is in the .keras folder of the user's HOME directory:
+As we use Theano as the Deep Learning computation backend, but Keras is configured to use TensorFlow as the default on Windows, you have to change this in the `keras.json` configuration file which is in the `.keras` folder of the user's HOME directory:
 
 Change these 2 lines to the following:
-`{
+```
+{
     "image_dim_ordering": "th",
     "backend": "theano"
-}`
+}
+```
 
 See https://keras.io/backend/ for details or http://ankivil.com/installing-keras-theano-and-dependencies-on-windows-10/ for a step by step guide.
 
 ### Optional for GPU computation
 
-If you want to train your neural networks on GPU, also install the following:
+If you want to train your neural networks on your GPU, also install the following (not needed for the tutorials):
 
 * [NVidia drivers](http://www.nvidia.com/Download/index.aspx?lang=en-us)
 * [CUDA](https://developer.nvidia.com/cuda-downloads)
@@ -78,23 +80,23 @@ If you want to train your neural networks on GPU, also install the following:
 
 To permanently configure Keras/Theano to use the GPU place a file `.theanorc` in your home directory with the following content:
 
-`
+```
 [global]
 device = gpu
 floatX = float32
 mode=FAST_RUN
-`
+```
 
 ### Check if installed correctly
 
-To check if Python, Keras and Theano were installed correctly, do:
+To check whether Python, Keras and Theano were installed correctly, do:
 
 `
 python test_keras.py
 `
 
-If everything is installed correctly, it should print `Using Theano backend.`.<br/>
-If the GPU is configured correctly, it should also print `Using gpu device 0: GeForce GTX 980 Ti`.
+If everything is installed correctly, it should print `Using Theano backend.`<br/>
+If the GPU is configured correctly, it should also print `Using gpu device 0: GeForce GTX 980 Ti` or similar.
 
 
 # Tutorials
@@ -107,7 +109,7 @@ To run the tutorials go into the `DL_Tutorial` folder and start from the command
 
 Your web browser will open showing a list of files. Start the tutorials one after another by clicking on the following:
 
-1. <Car_recognition.ipynb>Car_recognition.ipynb
+1. <b>Car_recognition.ipynb</b><br/>
    This tutorial shows how images are loaded into Python and classified binary into "cars" and "not cars" using
    a) a Fully Connected neural network and b) a Convolutional Neural Network.
 
@@ -116,7 +118,7 @@ Your web browser will open showing a list of files. Start the tutorials one afte
 
 # Data Sources
 
-The data sets we use in the tutorials are from the following sources:
+The data sets we use in the tutorials are from the following sources: (a copy is included in this repository, so no need to download)
 
 Car Data Set:
 http://cogcomp.cs.illinois.edu/Data/Car/
