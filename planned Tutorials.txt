@@ -14,6 +14,9 @@ make it predict (numbers?)
 2. Car detection:
 Fully connected network
 CNN (single layer)
+Batch normalization
+Dropout
+ReLu
 
 3. People detection:
 - new data rec. by Mon Style
