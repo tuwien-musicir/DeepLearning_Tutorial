@@ -1,16 +1,12 @@
 # Deep Learning Tutorial
 ## Coding Deep Learning Algorithms in Python with Keras
 
-(c) 2017 by Thomas Lidy, TU Wien
+(c) 2017 by Thomas Lidy, TU Wien - http://ifs.tuwien.ac.at/~lidy
 
 This is a set of tutorials with the purpose of getting into hands-on programming of Deep learning algorithms for
 various tasks.
 
-It uses Python 2.7 as the programming language with the popular [Keras] (https://keras.io/) and Theano Deep Learning libraries underneath.
-
-
-http://deeplearning.net/software/theano/
-
+It uses Python 2.7 as the programming language with the popular [Keras] (https://keras.io/) and [Theano](http://deeplearning.net/software/theano/) Deep Learning libraries underneath.
 
 # Installation of Pre-requisites
 
@@ -23,29 +19,42 @@ Otherwise install Python 2.7 from https://www.python.org/download/releases/2.7/
 ## Install Python libraries:
 
 ### Mac 
-(the frist two are not needed if you have done this previously):
+
+On the terminal:
+
+```
+# Note: the first two are not needed if you have done this previously:
 xcode-select --install
 easy_install pip 
 
 sudo pip install pillow
+```
 
 ### Linux + Windows
-
+`
 sudo pip install PIL
+`
 
 ### All OS
 In addition to the above, execute the following: (on Windows leave out `sudo`)
-
 `
+sudo pip install ipython
+`
+
+Try if you can open 
+`
+ipython notebook
+`
+on the command line. Otherwise try to install:
+`
+sudo pip install jupyter
+`
+
+Then install the remaining Python libraries neede:
+```
 cd DL_Tutorial
 sudo pip install -r requirements.txt
-`
-
 ```
-sudo pip install ipython
-```
-or
-sudo pip install jupyter
 
 ### Windows
 
