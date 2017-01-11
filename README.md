@@ -3,7 +3,7 @@
 
 (c) 2017 by Thomas Lidy, TU Wien - http://ifs.tuwien.ac.at/~lidy
 
-This is a set of tutorials with the purpose of getting into <b>hands-on programming of Deep learning algorithms<b> for
+This is a set of tutorials with the purpose of getting into <b>hands-on programming of Deep learning algorithms</b> for
 various tasks.
 It uses Python 2.7 as the programming language with the popular [Keras] (https://keras.io/) and [Theano](http://deeplearning.net/software/theano/) Deep Learning libraries underneath.
 
