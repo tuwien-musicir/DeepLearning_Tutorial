@@ -31,26 +31,34 @@ sudo pip install pillow
 ```
 
 ### Linux + Windows
-`
+```
 sudo pip install PIL
-`
+```
 
 ### All OS
 In addition to the above, execute the following: (on Windows leave out `sudo`)
-`
+```
 sudo pip install ipython
-`
+```
 
 Try if you can open 
-`
+```
 ipython notebook
-`
+```
 on the command line. Otherwise try to install:
-`
+```
 sudo pip install jupyter
-`
+```
 
-Then install the remaining Python libraries needed:
+Then download or clone the Tutorials from this GIT repository:
+
+```
+git clone https://github.com/tuwien-musicir/DL_Tutorial.git
+```
+or download https://github.com/tuwien-musicir/DL_Tutorial/archive/master.zip <br/>
+unzip it and rename the folder to `DL_Tutorial`.
+
+Install the remaining Python libraries needed:
 ```
 cd DL_Tutorial
 sudo pip install -r requirements.txt
@@ -116,12 +124,31 @@ Your web browser will open showing a list of files. Start the tutorials one afte
 (more tutorials to follow)
 
 
-# Data Sources
 
-The data sets we use in the tutorials are from the following sources: (a copy is included in this repository, so no need to download)
+# Source Credits
+
+## Python libraries
+
+The following helper Python libraries are used in these tutorials:
+
+image_preprocessing.py: by Thomas Lidy and Alexander Schindler
+audiofile_read.py and rp_extract.py: by Thomas Lidy and Alexander Schindler, taken from the [RP_extract](https://github.com/tuwien-musicir/rp_extract) git repository
+wavio.py: by Warren Weckesser
+
+## Data Sources
+
+The data sets we use in the tutorials are from the following sources: (a copy is included in this repository, so no need to download them)
 
 Car Data Set:
+Images of side views of cars for use in evaluating object detection algorithms. The images were collected at UIUC. Contains 1050 training images (550 car and 500 non-car images) and 170 single-scale test images, containing 200 cars at roughly the same scale as in the training images.
 http://cogcomp.cs.illinois.edu/Data/Car/
+
+Music Speech Data Set:
+by George Tzanetakis
+Collected for the purposes of music/speech discrimination. Consists of 128 tracks, each 30 seconds long. Each class (music/speech) has 64 examples in 22050Hz Mono 16-bit WAV audio format.
+http://marsyasweb.appspot.com/download/data_sets/
+
+NOT USED YET:
 
 Fashion Data Set:
 Fashion 10000: An Enriched Social Image Dataset forFashion and Clothing
