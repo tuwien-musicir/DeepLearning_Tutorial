@@ -8,6 +8,34 @@ various tasks.
 
 It uses Python 2.7 as the programming language with the popular [Keras] (https://keras.io/) and [Theano](http://deeplearning.net/software/theano/) Deep Learning libraries underneath.
 
+# Tutorials
+
+For the tutorials, we use iPython / Jupyter notebook, which allows to program and execute Python code interactively in the browser.
+
+### Viewing Only
+
+If you do not want to install anything, you can simply view the Tutorials' content in your browser, by clicking on
+the Tutorial's filenames listed below in the GIT file listing (above, resp. on https://github.com/tuwien-musicir/DL_Tutorial ).
+
+The Tutorial will open in your browser for viewing.
+
+### Interactive Coding
+
+If you want to follow the Tutorials by actually executing the code on your computer, please [install first the pre-requisites](#Installation of Pre-requisites) as described below.
+
+After that, to run the tutorials go into the `DL_Tutorial` folder and start from the command line:
+
+`ipython notebook`
+
+Your web browser will open showing a list of files. Start the tutorials one after another by clicking on the following:
+
+1. <b>Car_recognition.ipynb</b><br/>
+   This tutorial shows how images are loaded into Python and classified binary into "cars" and "not cars" using
+   a) a Fully Connected neural network and b) a Convolutional Neural Network.
+
+(more tutorials to follow)
+
+
 # Installation of Pre-requisites
 
 ## Install Python 2.7
@@ -66,7 +94,7 @@ sudo pip install -r requirements.txt
 
 ## Configure Keras to use Theano
 
-Since we use Theano as the Deep Learning computation backend, but Keras is configured to use TensorFlow by default, we have to change this in the `keras.json` configuration file which is in the `.keras` folder of the user's HOME directory.
+Since we use Theano as the Deep Learning computation backend, but Keras is configured to use TensorFlow by default, we have to change this in the `keras.json` configuration file, which is in the `.keras` folder of the user's HOME directory.
 
 Copy the `keras.json` included in the `DL_Tutorial` to one of the following target directories (you can overwrite an existing file):
 
@@ -84,7 +112,7 @@ An alternantive is to change these 2 lines in your `keras.json` file to the foll
 
 See https://keras.io/backend/ for details or http://ankivil.com/installing-keras-theano-and-dependencies-on-windows-10/ for a step by step guide.
 
-## Optional for GPU computation
+### Optional for GPU computation
 
 If you want to train your neural networks on your GPU, also install the following (not needed for the tutorials):
 
@@ -113,23 +141,6 @@ If everything is installed correctly, it should print `Using Theano backend.`<br
 If the GPU is configured correctly, it should also print `Using gpu device 0: GeForce GTX 980 Ti` or similar.
 
 
-# Tutorials
-
-For the tutorials, we use iPython / Jupyter notebook, which allows to program and execute Python code interactively in the browser.
-
-To run the tutorials go into the `DL_Tutorial` folder and start from the command line:
-
-`ipython notebook`
-
-Your web browser will open showing a list of files. Start the tutorials one after another by clicking on the following:
-
-1. <b>Car_recognition.ipynb</b><br/>
-   This tutorial shows how images are loaded into Python and classified binary into "cars" and "not cars" using
-   a) a Fully Connected neural network and b) a Convolutional Neural Network.
-
-(more tutorials to follow)
-
-
 
 # Source Credits
 
@@ -138,7 +149,7 @@ Your web browser will open showing a list of files. Start the tutorials one afte
 The following helper Python libraries are used in these tutorials:
 
 * `image_preprocessing.py`: by Thomas Lidy and Alexander Schindler
-* `audiofile_read.py` and `rp_extract`.py: by Thomas Lidy and Alexander Schindler, taken from the [RP_extract](https://github.com/tuwien-musicir/rp_extract) git repository
+* `audiofile_read.py` and `rp_extract.py`: by Thomas Lidy and Alexander Schindler, taken from the [RP_extract](https://github.com/tuwien-musicir/rp_extract) git repository
 * `wavio.py`: by Warren Weckesser
 
 ## Data Sources
