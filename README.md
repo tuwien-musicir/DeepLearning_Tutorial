@@ -3,9 +3,8 @@
 
 (c) 2017 by Thomas Lidy, TU Wien - http://ifs.tuwien.ac.at/~lidy
 
-This is a set of tutorials with the purpose of getting into hands-on programming of Deep learning algorithms for
+This is a set of tutorials with the purpose of getting into <b>hands-on programming of Deep learning algorithms<b> for
 various tasks.
-
 It uses Python 2.7 as the programming language with the popular [Keras] (https://keras.io/) and [Theano](http://deeplearning.net/software/theano/) Deep Learning libraries underneath.
 
 # Tutorials
@@ -21,7 +20,7 @@ The Tutorial will open in your browser for viewing.
 
 ### Interactive Coding
 
-If you want to follow the Tutorials by actually executing the code on your computer, please [install first the pre-requisites](#Installation of Pre-requisites) as described below.
+If you want to follow the Tutorials by actually executing the code on your computer, please [install first the pre-requisites](#installation-of-pre-requisites) as described below.
 
 After that, to run the tutorials go into the `DL_Tutorial` folder and start from the command line:
 
