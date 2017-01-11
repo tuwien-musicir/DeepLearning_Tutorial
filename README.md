@@ -64,11 +64,17 @@ cd DL_Tutorial
 sudo pip install -r requirements.txt
 ```
 
-### Windows
+## Configure Keras to use Theano
 
-As we use Theano as the Deep Learning computation backend, but Keras is configured to use TensorFlow as the default on Windows, you have to change this in the `keras.json` configuration file which is in the `.keras` folder of the user's HOME directory:
+Since we use Theano as the Deep Learning computation backend, but Keras is configured to use TensorFlow by default, we have to change this in the `keras.json` configuration file which is in the `.keras` folder of the user's HOME directory.
 
-Change these 2 lines to the following:
+Copy the `keras.json` included in the `DL_Tutorial` to one of the following target directories (you can overwrite an existing file):
+
+* Windows: `C:\Users\<user>\.keras\`
+* Mac: `/Users/<user>/.keras`
+* Linux: `/home/<user>/.keras`
+
+An alternantive is to change these 2 lines in your `keras.json` file to the following:
 ```
 {
     "image_dim_ordering": "th",
@@ -78,7 +84,7 @@ Change these 2 lines to the following:
 
 See https://keras.io/backend/ for details or http://ankivil.com/installing-keras-theano-and-dependencies-on-windows-10/ for a step by step guide.
 
-### Optional for GPU computation
+## Optional for GPU computation
 
 If you want to train your neural networks on your GPU, also install the following (not needed for the tutorials):
 
@@ -131,26 +137,26 @@ Your web browser will open showing a list of files. Start the tutorials one afte
 
 The following helper Python libraries are used in these tutorials:
 
-image_preprocessing.py: by Thomas Lidy and Alexander Schindler
-audiofile_read.py and rp_extract.py: by Thomas Lidy and Alexander Schindler, taken from the [RP_extract](https://github.com/tuwien-musicir/rp_extract) git repository
-wavio.py: by Warren Weckesser
+* `image_preprocessing.py`: by Thomas Lidy and Alexander Schindler
+* `audiofile_read.py` and `rp_extract`.py: by Thomas Lidy and Alexander Schindler, taken from the [RP_extract](https://github.com/tuwien-musicir/rp_extract) git repository
+* `wavio.py`: by Warren Weckesser
 
 ## Data Sources
 
 The data sets we use in the tutorials are from the following sources: (a copy is included in this repository, so no need to download them)
 
-Car Data Set:
+* Car Data Set:
 Images of side views of cars for use in evaluating object detection algorithms. The images were collected at UIUC. Contains 1050 training images (550 car and 500 non-car images) and 170 single-scale test images, containing 200 cars at roughly the same scale as in the training images.
 http://cogcomp.cs.illinois.edu/Data/Car/
 
-Music Speech Data Set:
+* Music Speech Data Set:
 by George Tzanetakis
 Collected for the purposes of music/speech discrimination. Consists of 128 tracks, each 30 seconds long. Each class (music/speech) has 64 examples in 22050Hz Mono 16-bit WAV audio format.
 http://marsyasweb.appspot.com/download/data_sets/
 
 NOT USED YET:
 
-Fashion Data Set:
+* Fashion Data Set:
 Fashion 10000: An Enriched Social Image Dataset forFashion and Clothing
 Loni et. al, Proceedings of the 5th ACM Multimedia Systems Conference, 2014
 https://www.researchgate.net/publication/262254329_Fashion_10000_An_enriched_social_image_dataset_for_fashion_and_clothing
