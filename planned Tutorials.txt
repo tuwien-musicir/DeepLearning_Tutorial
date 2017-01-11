@@ -17,6 +17,8 @@ CNN (single layer)
 Batch normalization
 Dropout
 ReLu
+Data augmentation
+
 
 3. People detection:
 - new data rec. by Mon Style
@@ -24,7 +26,6 @@ CNN (single + two layer)
 VGG
 train/test split
 cross-validation
-Data augmentation
 
 show learned filters
 
@@ -41,4 +42,7 @@ Domestic Audio (multi-label)
 
 5.
 RNN example?
+
+how to use pre-trained model
+
 
