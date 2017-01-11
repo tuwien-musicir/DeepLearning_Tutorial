@@ -1,3 +1,5 @@
+# these are a collection of helper functions to preprocess and standardize images
+
 from PIL import Image
 from sklearn import preprocessing
 
