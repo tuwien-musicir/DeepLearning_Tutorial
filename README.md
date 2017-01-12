@@ -32,7 +32,9 @@ Your web browser will open showing a list of files. Start the tutorials one afte
    This tutorial shows how images are loaded into Python and classified binary into "cars" and "not cars" using
    a) a Fully Connected neural network and b) a Convolutional Neural Network.
 
-(more tutorials to follow)
+2. <b>Music_speech_classification.ipynb</b><br/>
+   This tutorial shows how music is distinguished from speech, loading audio files into Python and classifying them either into "music" or "speech" using different architectures and parameters of a Convolutional Neural Network. It also includes techniques such as Batch Normalization,
+   ReLU Activation and Dropout.
 
 
 # Installation of Pre-requisites
