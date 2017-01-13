@@ -88,6 +88,15 @@ or download https://github.com/tuwien-musicir/DL_Tutorial/archive/master.zip <br
 unzip it and rename the folder to `DL_Tutorial`.
 
 Install the remaining Python libraries needed:
+
+Either by:
+
+```
+sudo pip install Keras==1.2.0 Theano==0.8.2 scikit-learn>=0.17 pandas librosa
+```
+
+or, if you downloaded or cloned this repository, by:
+
 ```
 cd DL_Tutorial
 sudo pip install -r requirements.txt
