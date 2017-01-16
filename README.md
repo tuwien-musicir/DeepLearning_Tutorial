@@ -102,6 +102,8 @@ cd DL_Tutorial
 sudo pip install -r requirements.txt
 ```
 
+If you have problems with installing some libraries on **Mac OS X**, check answers 2 and 3 [here](http://stackoverflow.com/questions/29485741/unable-to-upgrade-python-six-package-in-mac-osx-10-10-2).
+
 ## Configure Keras to use Theano
 
 Since we use Theano as the Deep Learning computation backend, but Keras is configured to use TensorFlow by default, we have to change this in the `keras.json` configuration file, which is in the `.keras` folder of the user's HOME directory.
