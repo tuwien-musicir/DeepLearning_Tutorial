@@ -28,11 +28,11 @@ After that, to run the tutorials go into the `DL_Tutorial` folder and start from
 
 Your web browser will open showing a list of files. Start the tutorials one after another by clicking on the following:
 
-1. <b>Car_recognition.ipynb</b><br/>
+1. <b>[Car_recognition.ipynb](Car_recognition.ipynb)</b><br/>
    This tutorial shows how images are loaded into Python and classified binary into "cars" and "not cars" using
    a) a Fully Connected neural network and b) a Convolutional Neural Network.
 
-2. <b>Music_speech_classification.ipynb</b><br/>
+2. <b>[Music_speech_classification.ipynb](Music_speech_classification.ipynb)</b><br/>
    This tutorial shows how music is distinguished from speech, loading audio files into Python and classifying them either into "music" or "speech" using different architectures and parameters of a Convolutional Neural Network. It also includes techniques such as Batch Normalization,
    ReLU Activation and Dropout.
 
@@ -176,10 +176,3 @@ http://cogcomp.cs.illinois.edu/Data/Car/
 by George Tzanetakis
 Collected for the purposes of music/speech discrimination. Consists of 128 tracks, each 30 seconds long. Each class (music/speech) has 64 examples in 22050Hz Mono 16-bit WAV audio format.
 http://marsyasweb.appspot.com/download/data_sets/
-
-NOT USED YET:
-
-* Fashion Data Set:
-Fashion 10000: An Enriched Social Image Dataset forFashion and Clothing
-Loni et. al, Proceedings of the 5th ACM Multimedia Systems Conference, 2014
-https://www.researchgate.net/publication/262254329_Fashion_10000_An_enriched_social_image_dataset_for_fashion_and_clothing
