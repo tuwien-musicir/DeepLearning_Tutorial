@@ -47,36 +47,25 @@ Otherwise install Python 2.7 from https://www.python.org/download/releases/2.7/
 
 ## Install Python libraries:
 
-### Mac 
+### Mac OS
 
-On the terminal:
+If you haven't installed Python PIP earlier, start a Terminal and do the follwoing: 
 
 ```
-# Note: the first two are not needed if you have done this previously:
 xcode-select --install
 easy_install pip 
-
-sudo pip install pillow
 ```
 
-### Linux + Windows
+### All OS (incl. Mac OS)
+
+On command line or terminal execute the following: (on Windows leave out `sudo`)
 ```
-sudo pip install PIL
+sudo pip install ipython jupyter
 ```
 
-### All OS
-In addition to the above, execute the following: (on Windows leave out `sudo`)
-```
-sudo pip install ipython
-```
-
-Try if you can open 
+On the command line, try if you can start:
 ```
 ipython notebook
-```
-on the command line. Otherwise try to install:
-```
-sudo pip install jupyter
 ```
 
 Then download or clone the Tutorials from this GIT repository:
@@ -92,7 +81,7 @@ Install the remaining Python libraries needed:
 Either by:
 
 ```
-sudo pip install Keras==1.2.0 Theano==0.8.2 scikit-learn>=0.17 pandas librosa
+sudo pip install Keras>=1.2.0 Theano==0.8.2 scikit-learn>=0.17 pandas librosa
 ```
 
 or, if you downloaded or cloned this repository, by:
@@ -114,7 +103,7 @@ Copy the `keras.json` included in the `DL_Tutorial` to one of the following targ
 * Mac: `/Users/<user>/.keras`
 * Linux: `/home/<user>/.keras`
 
-An alternantive is to change these 2 lines in your `keras.json` file to the following:
+An alternative is to change these 2 lines in your `keras.json` file to the following:
 ```
 {
     "image_dim_ordering": "th",
